@@ -1,5 +1,4 @@
-# Software Requirements Specification (SRS)
-## Aplikasi Expense Tracker Mahasiswa "Budgeting Mahes"
+# Aplikasi Expense Tracker Mahasiswa "Budgeting Mahes"
 
 ### 1. Gambaran Umum
 
@@ -23,6 +22,7 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 | User/Mahasiswa | Pengguna yang melakukan registrasi, login, mengelola transaksi, melihat dashboard, menggunakan filter, dan logout. |
 
 ### 4. Kebutuhan Fungsional
+#### Software Requirements Specification (SRS)
 
 | ID | Fitur | Kebutuhan |
 |---|---|---|
