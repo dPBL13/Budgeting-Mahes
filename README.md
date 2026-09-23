@@ -24,6 +24,22 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 
 ### 4. Kebutuhan Fungsional
 
+| ID | Fitur | Kebutuhan |
+|---|---|---|
+| SRS-01 | Register | Membuat akun dengan nama, email, password |
+| SRS-02 | Login | Masuk menggunakan email dan password |
+| SRS-03 | Session | Mempertahankan user selama session berlaku |
+| SRS-04 | Dashboard | Menampilkan nama, saldo, pemasukan, pengeluaran, transaksi terbaru |
+| SRS-05 | Create | Menambah transaksi |
+| SRS-06 | Read | Melihat transaksi |
+| SRS-07 | Update | Mengubah transaksi |
+| SRS-08 | Delete | Menghapus transaksi |
+| SRS-09 | Filter | Memfilter transaksi berdasarkan jenis |
+| SRS-10 | Cookies | Menyimpan minimal satu preferensi |
+| SRS-11 | Authorization | Membatasi user agar hanya mengakses data sendiri |
+| SRS-12 | Logout | Mengakhiri session |
+
+
 #### SRS-01 — Register
 Sistem harus menyediakan fitur registrasi pengguna dengan data:
 - Nama
@@ -162,20 +178,3 @@ User (1) -------- (N) Transaction
 | BR-08 | User hanya dapat mengakses transaksi miliknya sendiri. |
 | BR-09 | Logout harus mengakhiri session pengguna. |
 | BR-10 | Sistem harus menggunakan cookies untuk menyimpan minimal satu preferensi. |
-
-### 8. Ringkasan Kebutuhan
-
-| ID | Fitur | Kebutuhan |
-|---|---|---|
-| SRS-01 | Register | Membuat akun dengan nama, email, password |
-| SRS-02 | Login | Masuk menggunakan email dan password |
-| SRS-03 | Session | Mempertahankan user selama session berlaku |
-| SRS-04 | Dashboard | Menampilkan nama, saldo, pemasukan, pengeluaran, transaksi terbaru |
-| SRS-05 | Create | Menambah transaksi |
-| SRS-06 | Read | Melihat transaksi |
-| SRS-07 | Update | Mengubah transaksi |
-| SRS-08 | Delete | Menghapus transaksi |
-| SRS-09 | Filter | Memfilter transaksi berdasarkan jenis |
-| SRS-10 | Cookies | Menyimpan minimal satu preferensi |
-| SRS-11 | Authorization | Membatasi user agar hanya mengakses data sendiri |
-| SRS-12 | Logout | Mengakhiri session |
