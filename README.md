@@ -164,7 +164,7 @@ Satu user dapat memiliki banyak transaksi, sedangkan satu transaksi hanya dimili
 User (1) -------- (N) Transaction
 ```
 
-### 7. Aturan Bisnis
+### 7. Aturan Bisnis (baru kerjain kalau semisal SRS sama database nya udah aman)
 
 | ID | Aturan |
 |---|---|
