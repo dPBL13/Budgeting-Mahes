@@ -1,9 +1,9 @@
 # Software Requirements Specification (SRS)
-## Aplikasi Expense Tracker Mahasiswa
+## Aplikasi Expense Tracker Mahasiswa "Budgeting Mahes"
 
 ### 1. Gambaran Umum
 
-Expense Tracker merupakan aplikasi web yang memungkinkan mahasiswa mengelola keuangan pribadi secara sederhana. Pengguna dapat membuat akun, melakukan login, mencatat pemasukan dan pengeluaran, melihat riwayat transaksi, serta mengetahui kondisi keuangannya melalui informasi saldo, total pemasukan, dan total pengeluaran.
+Budgeting Mahes merupakan aplikasi web yang memungkinkan mahasiswa mengelola keuangan pribadi secara sederhana. Pengguna dapat membuat akun, melakukan login, mencatat pemasukan dan pengeluaran, melihat riwayat transaksi, serta mengetahui kondisi keuangannya melalui informasi saldo, total pemasukan, dan total pengeluaran.
 
 Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pengguna hanya dapat mengakses dan mengelola data keuangannya sendiri. Aplikasi menggunakan session untuk mempertahankan status login dan cookies untuk menyimpan minimal satu preferensi pengguna.
 
