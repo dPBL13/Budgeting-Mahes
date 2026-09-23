@@ -176,8 +176,7 @@ User (1) -------- (N) Transaction
 
 <br>
 
-### 7. ATURAN BISNIS 
-#### *(baru kerjain kalau semisal SRS sama database nya udah aman)
+### 7. ATURAN BISNIS
 
 | ID | Aturan |
 |---|---|
