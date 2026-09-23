@@ -6,6 +6,7 @@ Budgeting Mahes merupakan aplikasi web yang memungkinkan mahasiswa mengelola keu
 
 Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pengguna hanya dapat mengakses dan mengelola data keuangannya sendiri. Aplikasi menggunakan session untuk mempertahankan status login dan cookies untuk menyimpan minimal satu preferensi pengguna.
 
+<br>
 
 ### 2. Tujuan Sistem
 
@@ -16,6 +17,7 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 - Mempertahankan status autentikasi selama session masih berlaku.
 - Menyimpan minimal satu preferensi pengguna menggunakan cookies.
 
+<br>
 
 ### 3. Aktor Sistem
 
@@ -23,6 +25,7 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 |---|---|
 | User/Mahasiswa | Pengguna yang melakukan registrasi, login, mengelola transaksi, melihat dashboard, menggunakan filter, dan logout. |
 
+<br>
 
 ### 4. Kebutuhan Fungsional
 #### Software Requirements Specification (SRS)
@@ -133,6 +136,7 @@ Sistem harus menyediakan fitur logout yang:
 2. Mengarahkan pengguna ke halaman login.
 3. Mencegah akses ke halaman yang membutuhkan autentikasi sampai pengguna login kembali.
 
+<br>
 
 ### 5. Kebutuhan Data
 
@@ -160,6 +164,7 @@ Sistem harus menyediakan fitur logout yang:
 | created_at | Timestamp | Waktu pembuatan |
 | updated_at | Timestamp | Waktu perubahan |
 
+<br>
 
 ### 6. Relasi Data
 
@@ -169,6 +174,7 @@ Satu user dapat memiliki banyak transaksi, sedangkan satu transaksi hanya dimili
 User (1) -------- (N) Transaction
 ```
 
+<br>
 
 ### 7. Aturan Bisnis (baru kerjain kalau semisal SRS sama database nya udah aman)
 
@@ -184,3 +190,5 @@ User (1) -------- (N) Transaction
 | BR-08 | User hanya dapat mengakses transaksi miliknya sendiri. |
 | BR-09 | Logout harus mengakhiri session pengguna. |
 | BR-10 | Sistem harus menggunakan cookies untuk menyimpan minimal satu preferensi. |
+
+<br>
