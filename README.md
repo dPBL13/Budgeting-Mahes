@@ -1,6 +1,6 @@
 # Aplikasi Expense Tracker Mahasiswa "Budgeting Mahes"
 
-### 1. Gambaran Umum
+### 1. GAMBARAN UMUM
 
 Budgeting Mahes merupakan aplikasi web yang memungkinkan mahasiswa mengelola keuangan pribadi secara sederhana. Pengguna dapat membuat akun, melakukan login, mencatat pemasukan dan pengeluaran, melihat riwayat transaksi, serta mengetahui kondisi keuangannya melalui informasi saldo, total pemasukan, dan total pengeluaran.
 
@@ -8,7 +8,7 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 
 <br>
 
-### 2. Tujuan Sistem
+### 2. TUJUAN SISTEM
 
 - Memudahkan mahasiswa mencatat pemasukan dan pengeluaran pribadi.
 - Memudahkan pengguna melihat riwayat transaksi.
@@ -19,7 +19,7 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 
 <br>
 
-### 3. Aktor Sistem
+### 3. AKTOR SISTEM
 
 | Aktor | Deskripsi |
 |---|---|
@@ -27,7 +27,7 @@ Setiap transaksi terhubung dengan pengguna yang sedang login sehingga setiap pen
 
 <br>
 
-### 4. Kebutuhan Fungsional
+### 4. KEBUTUHAN FUNGSIONAL
 #### Software Requirements Specification (SRS)
 
 | ID | Fitur | Kebutuhan |
@@ -138,7 +138,7 @@ Sistem harus menyediakan fitur logout yang:
 
 <br>
 
-### 5. Kebutuhan Data
+### 5. KEBUTUHAN DATA
 
 #### 5.1 User
 
@@ -166,7 +166,7 @@ Sistem harus menyediakan fitur logout yang:
 
 <br>
 
-### 6. Relasi Data
+### 6. RELASI DATA
 
 Satu user dapat memiliki banyak transaksi, sedangkan satu transaksi hanya dimiliki oleh satu user.
 
@@ -176,7 +176,8 @@ User (1) -------- (N) Transaction
 
 <br>
 
-### 7. Aturan Bisnis (baru kerjain kalau semisal SRS sama database nya udah aman)
+### 7. ATURAN BISNIS 
+#### *(baru kerjain kalau semisal SRS sama database nya udah aman)
 
 | ID | Aturan |
 |---|---|
