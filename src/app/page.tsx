@@ -30,8 +30,7 @@ export default function HomePage() {
               Login
             </Link>
 
-            <Link
-              href="/register"
+            <Link href="/register"
               className="rounded-lg border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-700 transition hover:bg-gray-100"
             >
               Buat Akun
