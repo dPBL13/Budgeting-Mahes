@@ -65,5 +65,5 @@ export async function registerUser(
     };
   }
 
-  redirect("/dashboard");
+  redirect("/login");
 }
