@@ -4,15 +4,18 @@
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
+// 1. Konfigurasi generator Prisma Client
 generator client {
   provider = "prisma-client-js"
 }
 
+// 2. Konfigurasi koneksi database
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
+// 3. Model User (tabel "users")
 model User {
   id        Int      @id @default(autoincrement())
   name      String
@@ -21,5 +24,34 @@ model User {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
+  // Relasi: 1 User punya banyak Transaction
+  transactions Transaction[]
+
   @@map("users")
+}
+
+// 4. Enum untuk tipe transaksi
+enum TransactionType {
+  income
+  expense
+}
+
+// 5. Model Transaction (tabel "transactions")
+model Transaction {
+  id              Int             @id @default(autoincrement())
+  userId          Int             @map("user_id")
+  type            TransactionType
+  amount          Decimal         @db.Decimal(15, 2)
+  description     String
+  transactionDate DateTime        @map("transaction_date") @db.Date
+  createdAt       DateTime        @default(now()) @map("created_at")
+  updatedAt       DateTime        @updatedAt @map("updated_at")
+
+  // 6. Relasi ke User (many-to-one)
+  // fields:[userId] = kolom lokal, references:[id] = kolom User, onDelete:Cascade = hapus transaksi jika user dihapus
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // 7. Index gabungan untuk query cepat
+  @@index([userId, transactionDate])
+  @@map("transactions")
 }
